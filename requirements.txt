@@ -1,0 +1,24 @@
+# Core vision + numerica
+numpy==1.26.4
+opencv-python==4.10.0.84
+scipy==1.13.1
+Pillow==10.4.0
+
+# Dati / tabelle / figure
+pandas==2.2.2
+matplotlib==3.9.2
+
+# Relazione: da relazione.md all'HTML autonomo che si stampa in PDF
+# (scripts/relazione_html.py). Serve solo all'ultimo passo, ma la traccia
+# chiede che i pacchetti esterni siano presenti nella versione finale.
+markdown==3.6
+# Le formule in TeX diventano MathML a tempo di composizione, non a runtime:
+# i browser lo rendono nativamente, quindi l'HTML consegnato resta
+# autosufficiente come lo sono le figure incorporate. Niente MathJax da CDN.
+latex2mathml==3.81.1
+
+# Modulo B — matcher deep (LoFTR via kornia)
+# torch pesante: su WSL2 CPU-only va bene. Se serve GPU, installare la
+# build CUDA da https://pytorch.org al posto di questa riga.
+torch==2.3.1
+kornia==0.7.3
